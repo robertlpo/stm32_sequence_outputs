@@ -40,6 +40,14 @@ typedef enum SignalStatus
 } SignalStatus;
 
 
+typedef enum InvertionMode
+{
+	normal,
+	inverted
+
+} InvertionMode;
+
+
 typedef struct SignalDefinition
 {
 	SignalType signal_type;
@@ -51,6 +59,7 @@ typedef struct SignalDefinition
 	int repeats;
 	int repeat_counter;
 	SignalStatus status;
+	InvertionMode invert_mode;
 
 } SignalDefinition;
 
@@ -73,6 +82,10 @@ void init_outputs_configuration(void);
 void logik_main_loop(void);
 
 void control_signals(void);
+
+void set_gpio(int sect, int sign, InvertionMode mode);
+
+void reset_gpio(int sect, int sign, InvertionMode mode);
 
 void control_inputs(void);
 

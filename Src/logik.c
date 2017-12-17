@@ -36,16 +36,18 @@ void init_outputs_configuration(void)
 	sections[0][0].signal_type = takt;
 	sections[0][0].gpio_port = S0O0_GPIO_Port;
 	sections[0][0].gpio_pin = S0O0_Pin;
-	sections[0][0].time_on = 1200;
-	sections[0][0].time_off = 800;
+	sections[0][0].time_on = 300;
+	sections[0][0].time_off = 200;
 	sections[0][0].time_counter = 0;
+	sections[0][0].invert_mode = normal;
 
 	sections[0][1].signal_type = takt;
 	sections[0][1].gpio_port = S0O1_GPIO_Port;
 	sections[0][1].gpio_pin = S0O1_Pin;
-	sections[0][1].time_on = 150;
-	sections[0][1].time_off = 350;
+	sections[0][1].time_on = 651;
+	sections[0][1].time_off = 351;
 	sections[0][1].time_counter = 0;
+	sections[0][1].invert_mode = normal;
 
 	sections[0][2].signal_type = pulse;
 	sections[0][2].gpio_port = S0O2_GPIO_Port;
@@ -53,28 +55,32 @@ void init_outputs_configuration(void)
 	sections[0][2].time_on = 5000;
 	sections[0][2].time_off = 5000;
 	sections[0][2].time_counter = 0;
+	sections[0][2].invert_mode = normal;
 	sections[0][2].repeats = REP_1;
 
 	sections[0][3].signal_type = takt;
 	sections[0][3].gpio_port = S0O3_GPIO_Port;
 	sections[0][3].gpio_pin = S0O3_Pin;
-	sections[0][3].time_on = 166;
-	sections[0][3].time_off = 166;
+	sections[0][3].time_on = 651;
+	sections[0][3].time_off = 351;
 	sections[0][3].time_counter = 0;
+	sections[0][3].invert_mode = inverted;
 
 	sections[1][0].signal_type = takt;
 	sections[1][0].gpio_port = S1O0_GPIO_Port;
 	sections[1][0].gpio_pin = S1O0_Pin;
-	sections[1][0].time_on = 1200;
-	sections[1][0].time_off = 800;
+	sections[1][0].time_on = 300;
+	sections[1][0].time_off = 200;
 	sections[1][0].time_counter = 0;
+	sections[1][0].invert_mode = normal;
 
 	sections[1][1].signal_type = takt;
 	sections[1][1].gpio_port = S1O1_GPIO_Port;
 	sections[1][1].gpio_pin = S1O1_Pin;
-	sections[1][1].time_on = 150;
-	sections[1][1].time_off = 350;
+	sections[1][1].time_on = 651;
+	sections[1][1].time_off = 351;
 	sections[1][1].time_counter = 0;
+	sections[1][1].invert_mode = normal;
 
 	sections[1][2].signal_type = pulse;
 	sections[1][2].gpio_port = S1O2_GPIO_Port;
@@ -82,28 +88,32 @@ void init_outputs_configuration(void)
 	sections[1][2].time_on = 5000;
 	sections[1][2].time_off = 5000;
 	sections[1][2].time_counter = 0;
+	sections[1][2].invert_mode = normal;
 	sections[1][2].repeats = REP_1;
 
 	sections[1][3].signal_type = takt;
 	sections[1][3].gpio_port = S1O3_GPIO_Port;
 	sections[1][3].gpio_pin = S1O3_Pin;
-	sections[1][3].time_on = 166;
-	sections[1][3].time_off = 166;
+	sections[1][3].time_on = 651;
+	sections[1][3].time_off = 351;
 	sections[1][3].time_counter = 0;
+	sections[1][3].invert_mode = inverted;
 
 	sections[2][0].signal_type = takt;
 	sections[2][0].gpio_port = S2O0_GPIO_Port;
 	sections[2][0].gpio_pin = S2O0_Pin;
-	sections[2][0].time_on = 1200;
-	sections[2][0].time_off = 800;
+	sections[2][0].time_on = 300;
+	sections[2][0].time_off = 200;
 	sections[2][0].time_counter = 0;
+	sections[2][0].invert_mode = normal;
 
 	sections[2][1].signal_type = takt;
 	sections[2][1].gpio_port = S2O1_GPIO_Port;
 	sections[2][1].gpio_pin = S2O1_Pin;
-	sections[2][1].time_on = 150;
-	sections[2][1].time_off = 350;
+	sections[2][1].time_on = 651;
+	sections[2][1].time_off = 351;
 	sections[2][1].time_counter = 0;
+	sections[2][1].invert_mode = normal;
 
 	sections[2][2].signal_type = pulse;
 	sections[2][2].gpio_port = S2O2_GPIO_Port;
@@ -111,14 +121,16 @@ void init_outputs_configuration(void)
 	sections[2][2].time_on = 5000;
 	sections[2][2].time_off = 5000;
 	sections[2][2].time_counter = 0;
+	sections[2][2].invert_mode = normal;
 	sections[2][2].repeats = REP_1;
 
 	sections[2][3].signal_type = takt;
 	sections[2][3].gpio_port = S2O3_GPIO_Port;
 	sections[2][3].gpio_pin = S2O3_Pin;
-	sections[2][3].time_on = 166;
-	sections[2][3].time_off = 166;
+	sections[2][3].time_on = 651;
+	sections[2][3].time_off = 351;
 	sections[2][3].time_counter = 0;
+	sections[2][3].invert_mode = inverted;
 }
 
 
@@ -128,25 +140,25 @@ void init_inputs_configuration(void)
 	inputs[INP_SEL0].input_type = ls;
 	inputs[INP_SEL0].gpio_port = SEL0_GPIO_Port;
 	inputs[INP_SEL0].gpio_pin = SEL0_Pin;
-	inputs[INP_SEL0].debounc_time = 1000;
+	inputs[INP_SEL0].debounc_time = 200;
 	inputs[INP_SEL0].debounc_counter = 0;
 
 	inputs[INP_SEL1].input_type = ls;
 	inputs[INP_SEL1].gpio_port = SEL1_GPIO_Port;
 	inputs[INP_SEL1].gpio_pin = SEL1_Pin;
-	inputs[INP_SEL1].debounc_time = 1000;
+	inputs[INP_SEL1].debounc_time = 200;
 	inputs[INP_SEL1].debounc_counter = 0;
 
 	inputs[INP_SEL2].input_type = ls;
 	inputs[INP_SEL2].gpio_port = SEL2_GPIO_Port;
 	inputs[INP_SEL2].gpio_pin = SEL2_Pin;
-	inputs[INP_SEL2].debounc_time = 1000;
+	inputs[INP_SEL2].debounc_time = 200;
 	inputs[INP_SEL2].debounc_counter = 0;
 
 	inputs[INP_STOP].input_type = ls;
 	inputs[INP_STOP].gpio_port = STOP_GPIO_Port;
 	inputs[INP_STOP].gpio_pin = STOP_Pin;
-	inputs[INP_STOP].debounc_time = 1000;
+	inputs[INP_STOP].debounc_time = 200;
 	inputs[INP_STOP].debounc_counter = 0;
 }
 
@@ -166,7 +178,7 @@ void control_signals(void)
 					if (sections[sect][sign].time_counter >= 0 &&
 						sections[sect][sign].time_counter <= sections[sect][sign].time_on)
 					{
-						HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_SET);
+						set_gpio(sect, sign, sections[sect][sign].invert_mode);
 
 						sections[sect][sign].time_counter++;
 					}
@@ -175,7 +187,7 @@ void control_signals(void)
 					if (sections[sect][sign].time_counter > sections[sect][sign].time_on &&
 						sections[sect][sign].time_counter <= sections[sect][sign].time_on + sections[sect][sign].time_off)
 					{
-						HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_RESET);
+						reset_gpio(sect, sign, sections[sect][sign].invert_mode);
 
 						sections[sect][sign].time_counter++;
 					}
@@ -197,6 +209,26 @@ void control_signals(void)
 
 
 
+void set_gpio(int sect, int sign, InvertionMode mode)
+{
+	if (mode == normal)
+		HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_SET);
+	else
+		HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_RESET);
+}
+
+
+
+void reset_gpio(int sect, int sign, InvertionMode mode)
+{
+	if (mode == normal)
+		HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_RESET);
+	else
+		HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_SET);
+}
+
+
+
 void control_inputs(void)
 {
 	if (check_input(INP_STOP))
@@ -208,25 +240,31 @@ void control_inputs(void)
 
 	if (check_input(INP_SEL0))
 	{
-		disable_signals();
-		enable_signals(0);
-		current_info = 0;
+		if (current_info == INP_STOP)
+		{
+			enable_signals(INP_SEL0);
+			current_info = INP_SEL0;
+		}
 	}
 	else
 
 	if (check_input(INP_SEL1))
 	{
-		disable_signals();
-		enable_signals(1);
-		current_info = 1;
+		if (current_info == INP_STOP)
+		{
+			enable_signals(INP_SEL1);
+			current_info = INP_SEL1;
+		}
 	}
 	else
 
 	if (check_input(INP_SEL2))
 	{
-		disable_signals();
-		enable_signals(2);
-		current_info = 2;
+		if (current_info == INP_STOP)
+		{
+			enable_signals(INP_SEL2);
+			current_info = INP_SEL2;
+		}
 	}
 }
 
@@ -241,7 +279,7 @@ void disable_signals(void)
 			sections[sect][sign].status = disabled;
 			sections[sect][sign].time_counter = 0;
 			sections[sect][sign].repeat_counter = 0;
-			HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, 0);
+			HAL_GPIO_WritePin(sections[sect][sign].gpio_port, sections[sect][sign].gpio_pin, GPIO_PIN_RESET);
 		}
 	}
 }
