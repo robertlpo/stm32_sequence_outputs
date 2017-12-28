@@ -44,8 +44,8 @@ void init_outputs_configuration(void)
 	sections[0][1].signal_type = takt;
 	sections[0][1].gpio_port = S0O1_GPIO_Port;
 	sections[0][1].gpio_pin = S0O1_Pin;
-	sections[0][1].time_on = 651;
-	sections[0][1].time_off = 351;
+	sections[0][1].time_on = 1003;
+	sections[0][1].time_off = 1003;
 	sections[0][1].time_counter = 0;
 	sections[0][1].invert_mode = normal;
 
@@ -61,8 +61,8 @@ void init_outputs_configuration(void)
 	sections[0][3].signal_type = takt;
 	sections[0][3].gpio_port = S0O3_GPIO_Port;
 	sections[0][3].gpio_pin = S0O3_Pin;
-	sections[0][3].time_on = 651;
-	sections[0][3].time_off = 351;
+	sections[0][3].time_on = 1003;
+	sections[0][3].time_off = 1003;
 	sections[0][3].time_counter = 0;
 	sections[0][3].invert_mode = inverted;
 
@@ -77,8 +77,8 @@ void init_outputs_configuration(void)
 	sections[1][1].signal_type = takt;
 	sections[1][1].gpio_port = S1O1_GPIO_Port;
 	sections[1][1].gpio_pin = S1O1_Pin;
-	sections[1][1].time_on = 651;
-	sections[1][1].time_off = 351;
+	sections[1][1].time_on = 1003;
+	sections[1][1].time_off = 1003;
 	sections[1][1].time_counter = 0;
 	sections[1][1].invert_mode = normal;
 
@@ -94,8 +94,8 @@ void init_outputs_configuration(void)
 	sections[1][3].signal_type = takt;
 	sections[1][3].gpio_port = S1O3_GPIO_Port;
 	sections[1][3].gpio_pin = S1O3_Pin;
-	sections[1][3].time_on = 651;
-	sections[1][3].time_off = 351;
+	sections[1][3].time_on = 1003;
+	sections[1][3].time_off = 1003;
 	sections[1][3].time_counter = 0;
 	sections[1][3].invert_mode = inverted;
 
@@ -110,8 +110,8 @@ void init_outputs_configuration(void)
 	sections[2][1].signal_type = takt;
 	sections[2][1].gpio_port = S2O1_GPIO_Port;
 	sections[2][1].gpio_pin = S2O1_Pin;
-	sections[2][1].time_on = 651;
-	sections[2][1].time_off = 351;
+	sections[2][1].time_on = 1003;
+	sections[2][1].time_off = 1003;
 	sections[2][1].time_counter = 0;
 	sections[2][1].invert_mode = normal;
 
@@ -127,8 +127,8 @@ void init_outputs_configuration(void)
 	sections[2][3].signal_type = takt;
 	sections[2][3].gpio_port = S2O3_GPIO_Port;
 	sections[2][3].gpio_pin = S2O3_Pin;
-	sections[2][3].time_on = 651;
-	sections[2][3].time_off = 351;
+	sections[2][3].time_on = 1003;
+	sections[2][3].time_off = 1003;
 	sections[2][3].time_counter = 0;
 	sections[2][3].invert_mode = inverted;
 }
